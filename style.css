@@ -16,13 +16,20 @@ header {
 
 nav {
 	margin: 10px;
-	color: #fff;
+	
 
 }
 
 a {
 	text-decoration: none;
-	color: #fff;
+	color: gray;
+	font-size: 1.5em;
+}
+
+a.active {
+	border: 2px solid #ee5a4c;
+	padding: 5px;
+
 }
 
 ul {
@@ -33,7 +40,7 @@ ul {
 .nav li {
 	list-style-type: none;
 	display: inline;
-	background-color: gray;
+	/*background-color: gray;*/
 	padding: 10px;
 }
 
