@@ -16,3 +16,20 @@ function handler(e) {
 
   e.stopPropagation();
 }
+
+var myContactBar = document.getElementById('contact-bar');
+var myContactButton = document.querySelector('[href="#button"]');
+
+ myContactButton.addEventListener("click", contact, false);
+
+function contact (e) {
+
+ 	if (myContactBar.classList.contains("close")) {
+    myContactBar.classList.remove("close");
+    myContactBar.classList.add("open");
+  }
+  else {
+    myContactBar.classList.remove("open");
+    myContactBar.classList.add("close");
+  }
+ }

@@ -39,7 +39,7 @@ ul {
 
 .nav li {
 	list-style-type: none;
-	display: inline;
+	
 	/*background-color: gray;*/
 	padding: 10px;
 }
@@ -97,16 +97,47 @@ header img {
 	height: 12vmax;
 	width: 12vmax;
 	margin: 10px 0 0 10px;
+	clear: both;
 	
 }
+
+/*drop donw contact bar*/
+
+#contact-bar {
+	background-color: #eee;
+	
+	margin-bottom: 4vmax;
+	color:#ee5a4c;
+	padding-left: 2vmax;
+	border-radius:  0 0 4px 4px;
+
+}
+
+.close {
+	margin-top: -196px;
+}
+
+.open {
+	margin-top: 0;
+
+}
+
+
+
+
+
 
 
 /*media queries*/
 
 @media (min-width: 768px) {
 
-
-
+	#contact-bar {
+		display: flex;
+	}
+	.close {
+		margin-top: -180px;
+	}
 	.logo {
 		float: left;
 	}
@@ -131,6 +162,12 @@ header img {
 		padding-right: 10px;
 
 	}
+
+	.nav li {
+		display: inline;
+	}
+
+
 
 	
 }
